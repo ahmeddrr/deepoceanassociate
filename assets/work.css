@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    max-height: 100px;
+    /* background-color: rgb(121, 38, 38); */
+    background-color: #c5c5c949;
+    display: flex;
+}
+.logo
+{
+    width: 50%;
+    max-height: 100px;
+    /* padding: 12px; */
+    padding-left: 50px;
+}
+.nav{
+    width: 50%;
+    max-height: 100px;
+    display: flex;
+    justify-content: right;
+    margin-right: 4rem;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+
+}
+.nav a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 20px;
+    color: black;
+}
+.image{
+    width: 100%;
+    min-height: 300px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+.image::before{
+    content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 300px;
+background-image: url(property.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+z-index: -1;
+opacity: 0.5;
+}
+.property-listing{
+    width: 100%;
+    min-height: 400px;
+}
+.property-listing .filter{
+    width: 100%;
+    display: flex;
+}
+.filter-btn{
+    width: 50%;
+    padding: 8px;
+    margin-left: 4rem;
+}
+.filter-btn button{
+    padding: 5px 18px;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(32, 73, 253);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.filter-btn button:hover{
+    background-color: rgb(25, 25, 252);
+    color: white;
+}
+.search-btn{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    padding: 8px;
+
+}
+.search-btn input{
+    outline: none;
+    padding: 7px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);    
+    font-family: 'Poppins',sans-serif;
+    border-radius: 2px;
+}
+.search-btn button{
+    padding: 3px 9px;
+    font-family: 'Poppins',sans-serif;
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: rgb(15, 131, 15);
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.property{
+    width: 80%;
+    min-height: 1200px;
+    margin: auto;
+}
+.property p{
+    font-family: 'Poppins';
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: rgba(34, 34, 34, 0.856);
+}
+.property-grid{
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+border: 1px solid rgba(0, 0, 0, 0.137);   
+ margin-top: 1rem;
+}
+
+.box{
+    width: 80%;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 12px 2px rgba(114, 114, 253, 0.158);
+    margin: 10px;
+    display: flex;
+}
+
+.property-image{
+    width: 50%;
+    min-height: 300px;
+    /* background-color: black; */
+}
+.description{
+    font-family: 'Montserrat',sans-serif;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.description .prize{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.description .address{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.description .characteristics{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+.description .desc{
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 5rem;
+    font-size: 1.1rem;
+}
+.approach-btns button{
+padding: 4px 30px;
+font-family: 'Poppins',sans-serif;
+border-radius: 4px;
+outline: none;
+border: none;
+font-size: 0.9rem;
+
+
+}
+.approach-btns .call-btn{
+    background-color: blue;
+    color:  white;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    border: 1px solid blue;
+}
+.approach-btns .call-btn:hover{
+    background-color: white;
+    border: 1px solid blue;
+
+    color:  blue;
+    cursor: pointer;
+}
+
+.approach-btns .mail-btn{
+    border: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.approach-btns .mail-btn:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+
